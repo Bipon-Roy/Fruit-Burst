@@ -79,12 +79,13 @@
                         </h3>
                     </div>
 
-                    <div class="dropdown navbar-end hidden lg:flex">
+                    <div class="dropdown navbar-end hidden lg:flex relative">
                         <input
                             type="text"
                             placeholder="Search here"
                             class="input input-bordered w-full max-w-xs mr-8 rounded-3xl"
                         />
+                        <i class="fa-solid fa-magnifying-glass flex-col absolute right-14"></i>
                     </div>
                 </div>
             </nav>
@@ -93,7 +94,7 @@
 
             <!-- slider-->
             <div
-                class="mx-5 md:mx-8 lg:mx-0 carousel h-[250px] md:h-[600px] w-[380px] md:w-full rounded-md md:rounded-xl overflow-hidden"
+                class="mx-5 md:mx-8 lg:mx-0 carousel h-[250px] md:h-[600px] w-[380px] md:w-full rounded-md md:rounded-xl overflow-hidden relative z-10"
             >
                 <!-- slide-1 -->
                 <div
@@ -266,6 +267,32 @@
                     </div>
                 </div>
                 <!-- end of slide-4 -->
+            </div>
+            <!-- available fruits section -->
+            <!-- container -->
+            <div
+                class="mx-auto hidden lg:w-[1000px] lg:grid grid-cols-5 shadow-lg absolute bg-white z-20 lg:-mt-28 lg:ml-32 rounded-lg"
+            >
+                <div class="flex flex-col justify-center items-center my-10">
+                    <img src="./images/fruit1.png" class="" alt="Fruit Image" />
+                    <p class="text-text-main text-xl">Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center my-10">
+                    <img src="./images/fruit2.png" alt="Fruit Image" />
+                    <p class="text-text-main text-xl">Orange</p>
+                </div>
+                <div class="flex flex-col justify-center items-center my-10">
+                    <img src="./images/fruit3.png" alt="Fruit Image" />
+                    <p class="text-text-main text-xl">Mango</p>
+                </div>
+                <div class="flex flex-col ustify-center items-center my-10">
+                    <img src="./images/fruit4.png" alt="Fruit Image" />
+                    <p class="text-text-main text-xl">Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center my-10">
+                    <img src="./images/fruit5.png" alt="Fruit Image" />
+                    <p class="text-text-main text-xl">Mango</p>
+                </div>
             </div>
         </header>
         <main></main>
