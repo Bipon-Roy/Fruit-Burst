@@ -26,6 +26,7 @@
             type="text/css"
         />
         <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- tailwind custom classes -->
         <script>
             tailwind.config = {
@@ -46,16 +47,18 @@
             }
         </style>
     </head>
+
     <body class="font-lato">
-        <header class="max-w-7xl mx-auto">
-            <nav class="my-8 mx-4">
-                <div class="navbar flex-row-reverse md:flex-row md:bg-main-color md:rounded-[500px] py-3">
+        <header class="max-w-7xl mx-auto ">
+            <!-- navbar -->
+            <nav class="mt-4 md:my-8 md:mx-8 lg:mx-0">
+                <div class="navbar flex-row-reverse md:flex-row md:bg-main-color lg:rounded-[500px] py-4">
                     <div class="navbar-start justify-end md:justify-normal">
                         <div class= text-white font-medium">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                <i class="fa-solid fa-bars text-text-main text-2xl"></i>
+                                <i class="fa-solid fa-bars text-text-main md:text-white text-2xl"></i>
                             </label>
-                            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                            <ul class="menu menu-horizontal text-base px-1 hidden lg:flex ml-4">
                                 <li><a>Home</a></li>
                                 <li><a>About Us</a></li>
                                 <li><a>Shop</a></li>
@@ -65,19 +68,178 @@
                     </div>
                     <div class="navbar-center">
                         <img src="./images/logo.png" alt="Logo" />
-                        <h3 class="text-text-main md:text-white font-bold ml-4 text-4xl">
+                        <h3 class="text-text-main text-2xl md:text-white font-bold ml-4 md:text-4xl">
                             Fruit Burst
                         </h3>
                     </div>
+
                     <div class="dropdown navbar-end hidden lg:flex">
-                        <input
-                            type="text"
-                            placeholder="Search here "
-                            class="input input-bordered w-full max-w-xs mr-5 rounded-3xl"
-                        />
+                        <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs mr-8 rounded-3xl">
                     </div>
                 </div>
             </nav>
+
+
+            <!-- banner section -->
+
+            <!-- slider-->
+            <div class="mx-5 md:mx-8 lg:mx-0 carousel h-[250px] w-[380px] md:w-[700px] lg:w-full md:h-[600px] rounded-md md:rounded-xl ">
+                <!-- slide-1 -->
+                <div
+                    id="slide1"
+                    style="
+                        background-image: linear-gradient(rgba(13, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),
+                            url(./images/banner1.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    "
+                    class="carousel-item relative w-full"
+                >
+                    <div
+                        class="flex flex-col justify-center items-center text-center text-white space-y-3 md:space-y-5 w-full lg:pb-40"
+                    >
+                        <h1 class="text-3xl md:text-7xl font-extrabold">Exotic tastes at your<br />doorstep</h1>
+                        <p class="text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                        <button
+                            class="text-lg px-4 py-2 md:px-8 md:py-4 rounded-md bg-main-color capitalize text-white md:font-extrabold"
+                        >
+                            Shop Now
+                        </button>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    >
+                        <a
+                            href="#slide4"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❮</a
+                        >
+                        <a
+                            href="#slide2"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❯</a
+                        >
+                    </div>
+                </div>
+                <!-- end of slide-1 -->
+
+                <!-- slide-2 -->
+                <div
+                    id="slide2"
+                    style="
+                        background-image: linear-gradient(rgba(13, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),
+                            url(./images/banner2.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    "
+                    class="carousel-item relative w-full"
+                >
+                    <div
+                        class="flex flex-col justify-center items-center text-center text-white space-y-5 w-full lg:pb-40"
+                    >
+                    <h1 class="text-3xl md:text-7xl font-extrabold">Exotic tastes at your<br />doorstep</h1>
+                    <p class="text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                    <button
+                        class="text-lg px-4 py-2 md:px-8 md:py-4 rounded-md bg-main-color capitalize text-white md:font-extrabold"
+                    >
+                        Shop Now
+                    </button>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    >
+                        <a
+                            href="#slide1"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❮</a
+                        >
+                        <a
+                            href="#slide3"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❯</a
+                        >
+                    </div>
+                </div>
+                <!-- end of slide-2 -->
+
+                <!-- slide-3 -->
+                <div
+                    id="slide3"
+                    style="
+                        background-image: linear-gradient(rgba(13, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),
+                            url(./images/banner3.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    "
+                    class="carousel-item relative w-full"
+                >
+                    <div
+                        class="flex flex-col justify-center items-center text-center text-white space-y-5 w-full lg:pb-40"
+                    >
+                    <h1 class="text-3xl md:text-7xl font-extrabold">Exotic tastes at your<br />doorstep</h1>
+                    <p class="text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                    <button
+                        class="text-lg px-4 py-2 md:px-8 md:py-4 rounded-md bg-main-color capitalize text-white md:font-extrabold"
+                    >
+                        Shop Now
+                    </button>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    >
+                        <a
+                            href="#slide2"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❮</a
+                        >
+                        <a
+                            href="#slide4"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❯</a
+                        >
+                    </div>
+                </div>
+                <!-- end of slide-3 -->
+
+                <!-- slide-4 -->
+                <div
+                    id="slide4"
+                    style="
+                        background-image: linear-gradient(rgba(13, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),
+                            url(./images/banner4.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    "
+                    class="carousel-item relative w-full"
+                >
+                    <div
+                        class="flex flex-col justify-center items-center text-center text-white space-y-5 w-full lg:pb-40"
+                    >
+                    <h1 class="text-3xl md:text-7xl font-extrabold">Exotic tastes at your<br />doorstep</h1>
+                    <p class="text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                    <button
+                        class="text-lg px-4 py-2 md:px-8 md:py-4 rounded-md bg-main-color capitalize text-white md:font-extrabold"
+                    >
+                        Shop Now
+                    </button>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    >
+                        <a
+                            href="#slide3"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❮</a
+                        >
+                        <a
+                            href="#slide1"
+                            class="btn btn-circle bg-[#121212] border-black text-white"
+                            >❯</a
+                        >
+                    </div>
+                </div>
+                <!-- end of slide-4 -->
+            </div>
         </header>
     </body>
 </html>
