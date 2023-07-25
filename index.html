@@ -4,6 +4,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Fruit Burst</title>
+        <!-- google fonts Lato -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- tailwind and daisy ui cdn -->
         <link
             href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css"
@@ -18,13 +33,51 @@
                     extend: {
                         colors: {
                             clifford: "#da373d",
-                            "main-color": "#E76F51",
-                            "primary-bg": "rgba(231, 111, 81, 0.10)",
+                            "main-color": "#F85559",
+                            "text-main": "#121212",
                         },
                     },
                 },
             };
         </script>
+        <style>
+            .font-lato {
+                font-family: "Lato", sans-serif;
+            }
+        </style>
     </head>
-    <body></body>
+    <body class="font-lato">
+        <header class="max-w-7xl mx-auto">
+            <nav class="my-8 mx-4">
+                <div class="navbar flex-row-reverse md:flex-row md:bg-main-color md:rounded-[500px] py-3">
+                    <div class="navbar-start justify-end md:justify-normal">
+                        <div class= text-white font-medium">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars text-text-main text-2xl"></i>
+                            </label>
+                            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center">
+                        <img src="./images/logo.png" alt="Logo" />
+                        <h3 class="text-text-main md:text-white font-bold ml-4 text-4xl">
+                            Fruit Burst
+                        </h3>
+                    </div>
+                    <div class="dropdown navbar-end hidden lg:flex">
+                        <input
+                            type="text"
+                            placeholder="Search here "
+                            class="input input-bordered w-full max-w-xs mr-5 rounded-3xl"
+                        />
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </body>
 </html>
