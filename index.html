@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+        <link rel="icon" href="./images/logo.png" />
         <title>Fruit Burst</title>
         <!-- google fonts Lato -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,16 +52,18 @@
     <body class="font-lato">
         <header class="max-w-7xl mx-auto">
             <!-- navbar -->
-            <nav class="mt-4 md:my-8 md:ml-10 p-0 lg:ml-0">
+            <nav class="mt-4 md:mt-0 lg:my-8">
                 <div
-                    class="navbar w-[390px] md:w-full flex-row-reverse md:flex-row md:bg-main-color md:rounded-[500px] py-4"
+                    class="navbar w-[390px] md:w-full flex-row-reverse md:flex-row md:bg-main-color lg:rounded-[500px] py-4"
                 >
                     <div class="navbar-start justify-end md:justify-start">
                         <div class="text-white font-medium">
-                            <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                <i
-                                    class="fa-solid fa-bars text-text-main md:text-white text-2xl"
-                                ></i>
+                            <label tabindex="0" class="btn btn-ghost p-0 lg:hidden">
+                                <span>
+                                    <i
+                                        class="fa-solid fa-bars text-text-main md:text-white text-2xl"
+                                    ></i>
+                                </span>
                             </label>
                             <ul class="menu menu-horizontal text-base px-1 hidden lg:flex ml-4">
                                 <li><a>Home</a></li>
@@ -71,7 +73,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="navbar-center">
+                    <div class="navbar-center ml-4 md:ml-0">
                         <img src="./images/logo.png" alt="Logo" />
                         <h3
                             class="text-text-main text-2xl md:text-white font-bold ml-4 md:text-4xl"
@@ -95,7 +97,7 @@
 
             <!-- slider-->
             <div
-                class="mx-5 md:mx-8 lg:mx-0 carousel h-[250px] w-[380px] md:h-[600px] md:w-full rounded-md md:rounded-xl overflow-hidden relative z-10"
+                class="mx-5 md:mx-0 carousel h-[250px] w-[380px] md:h-[600px] md:w-full rounded-md md:rounded-none lg::rounded-xl overflow-hidden relative z-10"
             >
                 <!-- slide-1 -->
                 <div
@@ -297,6 +299,34 @@
             </div>
         </header>
         <main></main>
-        <footer></footer>
+
+        <footer class="footer footer-center p-10 bg-text-main mt-6 lg:mt-40">
+            <div class="grid grid-flow-col gap-0">
+                <img src="./images/logo.png" class="h-[50px] w-[50px]" alt="Logo" />
+                <h3 class="text-text-main text-2xl text-white font-bold ml-4 md:text-4xl">
+                    Fruit Burst
+                </h3>
+            </div>
+            <div
+                class="grid gap-4 grid-cols-4 md:grid-flow-col md:gap-5 lg:gap-14 text-white text-sm md:text-lg"
+            >
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Shop</a>
+                <a class="link link-hover">All Fruits</a>
+                <a class="link link-hover col-span-2">Support</a>
+                <a class="link link-hover">My Account</a>
+            </div>
+            <div>
+                <div class="grid grid-flow-col text-white text-2xl gap-3 md:gap-8 md:text-4xl">
+                    <a href=""><i class="fa-brands fa-twitter fa-fw"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-fw"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube fa-fw"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-fw"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram fa-fw"></i></a>
+                    <a href=""><i class="fa-brands fa-apple fa-fw"></i></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
