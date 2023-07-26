@@ -1,73 +1,40 @@
-<dialog id="my_modal_1" class="modal">
-                    <!-- Fruit-1 -->
-                    <div class="card card-compact bg-base-100 border border-gray-200 p-8 w-[450px]">
-                        <div class="space-y-5 text-center border-b-2">
-                            <figure>
-                                <img src="./images/fruit6.png" class="" alt="Shoes" />
-                            </figure>
-                            <p class="text-text-main font-bold pb-5">12.90$ - 18.85$</p>
-                        </div>
-
-                        <div class="card-body">
-                            <p class="text-gray-500 font-medium text-lg text-center">Apples</p>
-
-                            <div class="rating rating-lg rating-half flex justify-center space-y-2">
-                                <input type="radio" name="rating-10" class="rating-hidden" />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-1"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-2"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-1"
-                                    checked
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-2"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-1"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-2"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-1"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-2"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-1"
-                                />
-                                <input
-                                    type="radio"
-                                    name="rating-10"
-                                    class="bg-main-color mask mask-star-2 mask-half-2"
-                                />
-                            </div>
-                            <div class="text-center mt-4">
-                                <a href="" class="text-lg font-bold text-main-color">Details</a>
-                            </div>
+<div
+                    class="navbar w-[390px] md:w-full flex-row-reverse md:flex-row md:bg-main-color lg:rounded-[500px] py-4"
+                >
+                    <div class="navbar-start justify-end md:justify-start">
+                        <div class="text-white font-medium">
+                            <label tabindex="0" class="btn btn-ghost p-0 pr-4 lg:hidden">
+                                <span>
+                                    <i
+                                        class="fa-solid fa-bars text-text-main md:text-white text-2xl"
+                                    ></i>
+                                </span>
+                            </label>
+                            <ul class="menu menu-horizontal text-base px-1 hidden lg:flex ml-4">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
                         </div>
                     </div>
-                </dialog>
+                    <div class="navbar-center">
+                        <img
+                            src="./images/logo.png"
+                            class="w-[30px] h-[30px] md:w-[55px] md:h-[60px]"
+                            alt="Logo"
+                        />
+                        <h3 class="text-text-main text-xl md:text-white font-bold ml-4 md:text-4xl">
+                            Fruit Burst
+                        </h3>
+                    </div>
+
+                    <div class="dropdown navbar-end hidden lg:flex relative">
+                        <input
+                            type="text"
+                            placeholder="Search here"
+                            class="input input-bordered w-full max-w-xs mr-8 rounded-3xl"
+                        />
+                        <i class="fa-solid fa-magnifying-glass flex-col absolute right-14"></i>
+                    </div>
+                </div>
